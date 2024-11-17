@@ -40,39 +40,39 @@ def load_files():
 
 def generate_files(df_concat: pd.DataFrame ):
     path_root = ".\\DS\\out\\"
-    df_concat.to_csv(path_root+"df_full.csv")
+    df_concat.to_csv(path_root+"df_full.csv", index=False)
     print((path_root+"df_full.csv"))
 
     df_10p = df_concat.sample(frac=0.1)
-    df_10p.to_csv(path_root+"df_10p.csv")
+    df_10p.to_csv(path_root+"df_10p.csv", index=False)
     print(path_root+"df_10p.csv")
 
     df_4_309p = df_concat.sample(frac=0.04309)
-    df_4_309p.to_csv(path_root+"df_4_309p.csv")
+    df_4_309p.to_csv(path_root+"df_4_309p.csv", index=False)
     print(path_root+"df_4_309p.csv")
 
     df_20p = df_concat.sample(frac=0.2)
-    df_20p.to_csv(path_root+"df_20p.csv")
+    df_20p.to_csv(path_root+"df_20p.csv", index=False)
     print(path_root+"df_20p.csv")
 
     df_33p = df_concat.sample(frac=0.33)
-    df_33p.to_csv(path_root+"df_33p.csv")
+    df_33p.to_csv(path_root+"df_33p.csv", index=False)
     print(path_root+"df_33p.csv")
 
     df_10000 = df_concat.sample(n=10000)
-    df_10000.to_csv(path_root+"df_10000.csv")
+    df_10000.to_csv(path_root+"df_10000.csv", index=False)
     print(path_root+"df_10000.csv")
 
     df_50000 = df_concat.sample(n=50000)
-    df_50000.to_csv(path_root+"df_50000.csv")
+    df_50000.to_csv(path_root+"df_50000.csv", index=False)
     print(path_root+"df_50000.csv")
     
     df_100000 = df_concat.sample(n=100000)
-    df_100000.to_csv(path_root+"df_100000.csv")
+    df_100000.to_csv(path_root+"df_100000.csv", index=False)
     print(path_root+"df_100000.csv")
 
     df_575000 = df_concat.sample(n=575000)
-    df_575000.to_csv(path_root+"df_575000.csv")    
+    df_575000.to_csv(path_root+"df_575000.csv", index=False)    
     print(path_root+"df_575000.csv")    
 
 
